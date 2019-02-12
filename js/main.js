@@ -16,6 +16,7 @@ $(document).ready(function() {
   	$('.service__list').slick({
     dots: true,
     infinite: true,
+    variableWidth: true,
     adaptiveHeight: true,
     prevArrow: '<img class="prev-left" src="img/prev-left.png">',
     nextArrow: '<img class="prev-right" src="img/prev-right.png">',
@@ -38,17 +39,10 @@ $(document).ready(function() {
     ]
   });
 
-  $('.banner__list').slick({
-    dots: true,
+  $('').slick({
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000, 
-    adaptiveHeight: true,
-    prevArrow: '<img class="left" src="img/banner-left.png">',
-    nextArrow: '<img class="right" src="img/banner-right.png">',
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToShow: 2,
+    slidesToScroll: 2
   });
 
   $('.advantage__list').slick({
