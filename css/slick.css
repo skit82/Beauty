@@ -17,6 +17,14 @@
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+.slick-slider.reviews__slider {
+  display: none;
+}
+@media (min-width: 768px) {
+  .slick-slider.reviews__slider {
+    display: block;
+  }
+}
 
 .slick-list
 {
@@ -91,6 +99,7 @@
 {
     display: block;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .slick-slide.slick-loading img
 {
@@ -121,7 +130,7 @@
 }
 .prev-left {
   position: absolute;
-  left: 0px;
+  left: -15px;
   top: 115px;
   z-index: 1;
   opacity: 0.5;
@@ -160,7 +169,7 @@
   left: 0;
   top: 50px;
   z-index: 1;
-  opacity: 0.05;
+  opacity: 0.5;
 }
 .right {
   width: 30px;
@@ -171,7 +180,7 @@
   right: 0;
   top: 50px;
   z-index: 1;
-  opacity: 0.05;
+  opacity: 0.5;
 }
 .slick-slider:hover .left,
 .slick-slider:hover .right {
@@ -179,58 +188,66 @@
 }
 @media (min-width: 768px) {
   .left {
-    width: 50px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
   }
   .left {
     position: absolute;
-    left: 5px;
-    top: 155px;
+    left: 280px;
+    top: 240px;
     z-index: 1;
   }
   .right {
-    width: 50px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
   }
   .right {
     position: absolute;
-    right: 5px;
-    top: 155px;
+    right: 280px;
+    top: 240px;
     z-index: 1;
   }
 }
 @media (min-width: 1024px) {
   .left {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
   }
   .left {
     position: absolute;
-    left: -30px;
-    top: 170px;
+    left: 845px;
+    top: 220px;
     z-index: 1;
   }
   .right {
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
   }
   .right {
     position: absolute;
-    right: -30px;
-    top: 170px;
+    right: 0px;
+    top: 220px;
+    z-index: 1;
+  }
+}
+@media (min-width: 1170px) {
+  .left {
+    position: absolute;
+    left: 1000px;
+    top: 220px;
     z-index: 1;
   }
 }
 .left-arrow {
   position: absolute;
-  left: 0;
+  left: -15px;
   top: 112px;
   z-index: 1;
   opacity: 0.5;
 }
 .right-arrow {
   position: absolute;
-  right: 0;
+  right: -15px;
   top: 112px;
   z-index: 1;
   opacity: 0.5;

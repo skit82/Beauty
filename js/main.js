@@ -16,7 +16,6 @@ $(document).ready(function() {
   	$('.service__list').slick({
     dots: true,
     infinite: true,
-    variableWidth: true,
     adaptiveHeight: true,
     prevArrow: '<img class="prev-left" src="img/prev-left.png">',
     nextArrow: '<img class="prev-right" src="img/prev-right.png">',
@@ -25,8 +24,8 @@ $(document).ready(function() {
     slidesToScroll: 2,
     responsive: [
       {
-    breakpoint: 9999,
-    settings: "unslick"
+      breakpoint: 9999,
+      settings: "unslick"
     },
     {
       breakpoint: 767,
@@ -70,12 +69,12 @@ $(document).ready(function() {
   });
 
   $('.reviews__slider').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
-    prevArrow: '<img class="left-arrow" src="img/left-arrow.png">',
-    nextArrow: '<img class="right-arrow" src="img/right-arrow.png">',
-    slidesToShow: 3,
+    prevArrow: '<img class="left" src="img/left.png">',
+    nextArrow: '<img class="right" src="img/right.png">',
+    slidesToShow: 2,
     slidesToScroll: 2,
     responsive: [
     {
@@ -84,11 +83,11 @@ $(document).ready(function() {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 767,
         settings: {
           slidesToShow: 2,
           adaptiveHeight: true,
