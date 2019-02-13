@@ -279,6 +279,21 @@ input[type="radio"].visually-hidden {
     margin-top: 23px;
   }
 }
+@media (min-width: 1170px) {
+  .banner {
+    position: relative;
+  }
+  .banner::before {
+    position: absolute;
+    content: "";
+    width: 273px;
+    height: 395px;
+    bottom: -300px;
+    left: -190px;
+    background-image: url(../img/icon_petals.png);
+    z-index: -1;
+  }
+}
 .service {
   max-width: 1170px;
   margin: 0 auto;
@@ -304,18 +319,28 @@ input[type="radio"].visually-hidden {
 .service__name {
   margin: 0px;
   padding: 0px;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 11px;
   font-weight: 600;
   text-align: left;
 }
 .service__link {
+  position: relative;
   font-size: 8px;
   line-height: 37px;
   font-weight: 400;
   color: #595959;
   text-transform: uppercase;
   text-decoration: none;
+}
+.service__link::after {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 11px;
+  bottom: 1px;
+  right: -30px;
+  background-image: url(../img/icon-strel.png);
 }
 .service__list {
   width: 289px;
@@ -366,6 +391,15 @@ input[type="radio"].visually-hidden {
   .service__link {
     font-size: 12px;
     line-height: 70px;
+  }
+  .service__link::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 11px;
+    bottom: 4px;
+    right: -30px;
+    background-image: url(../img/icon-strel.png);
   }
 }
 @media (min-width: 1024px) {
@@ -447,6 +481,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 .advantage__picture {
+  position: relative;
   display: flex;
   width: 148px;
   height: 148px;
@@ -454,6 +489,33 @@ input[type="radio"].visually-hidden {
   margin-bottom: 34px;
   margin-top: 24px;
   box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.10);
+}
+.advantage__picture--one::before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  top: 8px;
+  left: -10px;
+  background-image: url(../img/icon_onead.png);
+}
+.advantage__picture--two::before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  top: 8px;
+  left: -10px;
+  background-image: url(../img/icon_twoad.png);
+}
+.advantage__picture--three::before {
+  position: absolute;
+  content: "";
+  width: 36px;
+  height: 36px;
+  top: 8px;
+  left: -10px;
+  background-image: url(../img/icon_threead.png);
 }
 .advantage__img {
   display: block;
@@ -708,6 +770,21 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/check_two.png);
   }
 }
+@media (min-width: 1170px) {
+  .work {
+    position: relative;
+  }
+  .work::before {
+    position: absolute;
+    content: "";
+    width: 352px;
+    height: 650px;
+    top: -66px;
+    left: -175px;
+    background-image: url(../img/icon-work.png);
+    z-index: -1;
+  }
+}
 
 .reviews {
   max-width: 1170px;
@@ -792,6 +869,21 @@ input[type="radio"].visually-hidden {
   }
   .reviews__text {
     padding-bottom: 90px;
+  }
+}
+@media (min-width: 1170px) {
+  .reviews {
+    position: relative;
+  }
+  .reviews::before {
+    position: absolute;
+    content: "";
+    width: 472px;
+    height: 710px;
+    right: -170px;
+    top: -197px;
+    background-image: url(../img/decors_reviews.png);
+    z-index: -1;
   }
 }
 .application {
@@ -935,6 +1027,21 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
     padding-bottom: 6px;
     margin-bottom: 30px;
+  }
+}
+@media (min-width: 1170px) {
+  .application {
+    position: relative;
+  }
+  .application::before {
+    position: absolute;
+    content: "";
+    width: 97px;
+    height: 270px;
+    left: -175px;
+    top: 28px;
+    background-image: url(../img/icon-application.png);
+    z-index: -1;
   }
 }
 
