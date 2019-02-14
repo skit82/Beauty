@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    $('.page-header__mob-open').on('click', function() {
+        $('.user').slideToggle(100, function(){
+          if($(this).css('display') === 'none'){
+          $(this).removeAttr('style')
+          };
+      });
+    })
+
     $('.spoiler__link').click(function(){ 
       $(this).parent().children('div.spoiler__content').toggle('fast');
       return false;
@@ -36,12 +44,6 @@ $(document).ready(function() {
       }
     }
     ]
-  });
-
-  $('').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 2
   });
 
   $('.advantage__list').slick({
