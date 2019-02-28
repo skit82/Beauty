@@ -3276,3 +3276,101 @@ input::placeholder {
     margin-bottom: 0px;
   }
 }
+
+.login {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.login__inner {
+  padding: 0 15px;
+}
+.login-box {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+.login-form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.login-form__input {
+  max-width: 320px;
+  margin: 10px 0px;
+  font-size: 16px;
+  line-height: 40px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #989898;
+}
+.login-form__chechbox[type="checkbox"] {
+  display: none;
+}
+.login-form__icon {
+  position: relative;
+}
+.login-form__icon::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  left: 0px;
+  top: 10px;
+  background-color: #ff6c64;
+}
+.login-form__icon::after {
+  display: none;
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 12px;
+  width: 31px;
+  height: 31px; 
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+}
+input:checked ~ .login-form__icon::after {
+  display: block;
+}
+.login-form__text {
+  padding-left: 48px;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #858585
+}
+.login__title {
+  padding: 0px;
+  margin: 0px;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+.login-form__submit {
+  max-width: 320px;
+  width: 100%;
+  display: block;
+  height: 45px;
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 45px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff6c64;
+}
+@media (min-width: 768px) {
+  .login-form {
+    padding: 0 48px;
+  }
+  .login-box {
+    max-width: 420px;
+  } 
+}
