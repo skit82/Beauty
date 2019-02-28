@@ -10,11 +10,10 @@
 </head>
 <body>
 	<header class="page-header">
-			<div class="page-header__inner">
+			<div class="page-header__inner-box">
 				<a href="" class="page-header__logo">
 					<img src="img/Logo.png" width="285" height="56" alt="Логотип" class="page-header__img">
 				</a>
-				<button class="page-header__mob-open"></button>
 				<div class="user-exit">
 					<a href="" class="user-exit__link">
 						Выйти
@@ -32,10 +31,10 @@
 					<aside class="client__separate">
 						<div class="client__descr">
 							<div class="client__block">
-								<a href="" class="client__user">
+								<a href="" class="client__user client__user--fon">
 									Клиент
 								</a>
-								<a href="" class="client__master">
+								<a href="master.html" class="client__master client__user--bg">
 									Мастер
 								</a>
 							</div>
@@ -70,8 +69,9 @@
 					</aside>
 					<div class="request__description">
 						<div class="request-select">
+							<p class="request-select-name">Выберите категорию заявок</p>
 							<select class="request-select-list">
-								<option>Все заявки (4)</option>>
+								<option>Все заявки (4)</option>
 							</select>
 						</div>
 						<div class="request__list">
@@ -90,7 +90,7 @@
 										</span>
 									</div>
 									<div class="request__block__link">
-										<a href="" class="request__block-ref">В исполнении</a>
+										<a href="" class="request__block-ref request__block-ref--execut">В исполнении</a>
 									</div>
 								</div>
 								<div class="request__block-user">
@@ -105,17 +105,17 @@
 												</p>
 											</span>
 										</a>
-									</div>
 										<div class="request__block-user-link">
-											Выбрать
+											3 500 ₽
 										</div>
+									</div>
 								</div>
 							</div>
 							<div class="request__inner">
 								<div class="request__block">
 									<div class="request__block-box">
 										<p class="request__block-name">
-											Новогодний макияж снегурочке
+											Праздничный маникюр
 										</p>
 										<span class="request__block-data">
 											18/12/2019    
@@ -126,7 +126,7 @@
 										</span>
 									</div>
 									<div class="request__block__link">
-										<a href="" class="request__block-ref">В исполнении</a>
+										<a href="" class="request__block-ref request__block-ref--expect">Ожидается выбор</a>
 									</div>
 								</div>
 								<div class="request__block-user">
@@ -135,15 +135,13 @@
 											<p class="request__block-user-title">
 												Исполнитель
 											</p>
-											<span class="request__block-user-data">
-												<p class="request__block-user-text">
-													Мария Иванова
-												</p>
+											<span class="request__block-user-proposal">
+												10 предложений
 											</span>
 										</a>
-									</div>
 									<div class="request__block-user-link">
-										Выбрать
+										1 500 ₽
+									</div>
 									</div>
 								</div>
 							</div>
@@ -152,7 +150,7 @@
 									<div class="request__block-box">
 										<div class="request__block-box">
 											<p class="request__block-name">
-												Новогодний макияж снегурочке
+												Стрижка и укладка
 											</p>
 											<span class="request__block-data">
 												18/12/2019    
@@ -164,7 +162,42 @@
 										</div>
 									</div>
 									<div class="request__block__link">
-										<a href="" class="request__block-ref">В исполнении</a>
+										<a href="" class="request__block-ref request__block-ref--expect">Ожидается выбор</a>
+									</div>
+								</div>
+								<div class="request__block-user">
+									<div class="request__block-user-box">
+										<a href="">
+											<p class="request__block-user-title">
+												Исполнитель
+											</p>
+											<span class="request__block-user-proposal">
+												2 предложений
+											</span>
+										</a>
+									<div class="request__block-user-link">
+										2 000 ₽
+									</div>
+									</div>
+								</div>
+								<div class="request__inner">
+								<div class="request__block">
+									<div class="request__block-box">
+										<div class="request__block-box">
+											<p class="request__block-name">
+												Депиляция
+											</p>
+											<span class="request__block-data">
+												10/01/2019     
+											</span>
+												|
+											<span class="request__block-clock">
+												 10:00
+											</span>
+										</div>
+									</div>
+									<div class="request__block__link">
+										<a href="" class="request__block-ref">Завершено</a>
 									</div>
 								</div>
 								<div class="request__block-user">
@@ -179,11 +212,12 @@
 												</p>
 											</span>
 										</a>
-									</div>
 									<div class="request__block-user-link">
-										Выбрать
+										2 000 ₽
+									</div>
 									</div>
 								</div>
+
 								</div>
 							</div>
 						</div>

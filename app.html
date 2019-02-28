@@ -10,11 +10,10 @@
 </head>
 <body>
 	<header class="page-header">
-			<div class="page-header__inner">
+			<div class="page-header__inner-box">
 				<a href="" class="page-header__logo">
 					<img src="img/Logo.png" width="285" height="56" alt="Логотип" class="page-header__img">
 				</a>
-				<button class="page-header__mob-open"></button>
 				<div class="user-exit">
 					<a href="" class="user-exit__link">
 						Выйти
@@ -32,32 +31,32 @@
 					<aside class="client__separate">
 						<div class="client__descr">
 							<div class="client__block">
-								<a href="" class="client__user">
+								<a href="" class="client__user client__user--fon">
 									Клиент
 								</a>
-								<a href="" class="client__master">
+								<a href="master.html" class="client__master client__user--bg">
 									Мастер
 								</a>
 							</div>
 							<nav class="menu">
 								<ul class="menu__list">
 									<li class="menu__item">
-										<a href="" class="menu__link menu__link--bell">
+										<a href="notification.html" class="menu__link menu__link--bell">
 											Уведомления
 										</a>
 									</li>
 									<li class="menu__item">
-										<a href="" class="menu__link menu__link--request">
+										<a href="app.html" class="menu__link menu__link--request">
 											Мои заявки
 										</a>
 									</li>
 									<li class="menu__item">
-										<a href="" class="menu__link menu__link--service">
+										<a href="balance.html" class="menu__link menu__link--service">
 											О сервисе
 										</a>
 									</li>
 									<li class="menu__item">
-										<a href="" class="menu__link menu__link--support">
+										<a href="request.html" class="menu__link menu__link--support">
 											Поддержка
 										</a>
 									</li>
@@ -131,6 +130,16 @@
 										<input class="app-form__block-input2" type="text" placeholder="Дом">
 										<input class="app-form__block-input3" type="text" placeholder="Квартира">
 										<input class="app-form__block-input4" type="text" placeholder="Корпус">
+									</div>
+								</div>
+							</fieldset>
+							<fieldset class="app-form__fieldset">
+								<div class="app-form__inner">
+									<span class="app-form__name">
+										Цена	
+									</span>
+									<div class="app-form__block">
+										<input class="app-form__block-input3" type="text" placeholder="Стоимость">
 									</div>
 								</div>
 							</fieldset>
