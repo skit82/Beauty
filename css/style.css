@@ -1335,10 +1335,13 @@ input[type="radio"].visually-hidden {
   display: -o-flex;
   display: flex;
   flex-direction: column;
+  max-width: 635px;
+  width: 100%;
 }
 .client__description-block,
 .master__description-block {
-  max-width: 500px;
+  max-width: 390px;
+  width: 100%;
 }
 .client__description-inner,
 .master__description-inner {
@@ -1516,6 +1519,14 @@ input[type="radio"].visually-hidden {
   background-image: url(../img/client-name.svg);
   background-position: 44px 40px;
   background-repeat: no-repeat;
+}
+.master__description-promo {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
 }
 @media (min-width: 768px) {
   .client__inner,
@@ -2619,6 +2630,7 @@ input::placeholder {
 .order__title {
   padding: 0px;
   margin: 0px;
+  padding-top: 15px;
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 34px;
@@ -2757,6 +2769,7 @@ input::placeholder {
 .notify__title {
   padding: 0px;
   margin: 0px;
+  padding-top: 15px;
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 34px;
@@ -2962,6 +2975,7 @@ input::placeholder {
 .demand__title {
   padding: 0px;
   margin: 0px;
+  padding-top: 15px;
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 34px;
@@ -3079,6 +3093,7 @@ input::placeholder {
 .view__title {
   padding: 0px;
   margin: 0px;
+  padding-top: 15px;
   margin-bottom: 16px;
   font-size: 24px;
   line-height: 34px;

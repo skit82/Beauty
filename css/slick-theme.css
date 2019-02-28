@@ -102,10 +102,13 @@
 .banner .slick-dotted.slick-slider {
   margin-bottom: 20px;
 }
-.slick-dotted.slick-slider
+.slick-dotted.slick-slider .master__description-promo {
+    margin-bottom: 0px;
+}
 {
     margin-bottom: 70px;
 }
+..slick-dotted.slick-slider 
 .banner__list .slick-dots {
     position: absolute;
     bottom: 10px;
@@ -120,12 +123,12 @@
 
     text-align: center;
 }
-.slick-dots
+.master__description-promo .slick-dots
 {
     position: absolute;
     bottom: -25px;
 
-    display: block;
+    display: none;
 
     width: 100%;
     padding: 0;
@@ -147,11 +150,11 @@
     background-color: #ffffff;
     cursor: pointer;
 }
-.slick-dots li
+.slick-dots li.master__description-promo
 {
     position: relative;
 
-    display: inline-block;
+    display: none;
 
     width: 20px;
     height: 20px;
@@ -160,12 +163,12 @@
 
     cursor: pointer;
 }
-.slick-dots li button
+.master__description-promo .slick-dots li button
 {
     font-size: 0;
     line-height: 0;
 
-    display: block;
+    display: none;
 
     width: 20px;
     height: 20px;

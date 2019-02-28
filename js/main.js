@@ -7,19 +7,6 @@ $(document).ready(function() {
           };
       });
     })
-
-    $('.spoiler__link').click(function(){ 
-      $(this).parent().children('div.spoiler__content').toggle('fast');
-      return false;
-    });
-
-    $('.products__show-all').on('click', function() {
-        $('.product__invisible').slideToggle(500, function(){
-          if($(this).css('display') === 'none'){
-          $(this).removeAttr('style')
-          };
-      });
-    })
         
   	$('.service__list').slick({
     dots: true,
@@ -43,6 +30,44 @@ $(document).ready(function() {
         slidesToScroll: 2,
       }
     }
+    ]
+  });
+
+    $('.master__description-promo').slick({
+    dots: true,
+    infinite: true,
+    adaptiveHeight: true,
+    prevArrow: '<img class="prev-left" src="img/prev-left.png">',
+    nextArrow: '<img class="prev-right" src="img/prev-right.png">',
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+    {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          adaptiveHeight: true,
+          slidesToScroll: 1
+        }
+      }
     ]
   });
 
