@@ -21,8 +21,18 @@
 html {
   box-sizing: border-box;
 }
+html,
+body {
+  height: 100%;
+}
 
 body {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
   margin: 0px;
   padding: 0px;
   width: 100%;
@@ -56,7 +66,11 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header {
+  flex: 0 0 auto;
   border-top: 1px solid #ff6c64;
+}
+.main {
+  flex: 1 0 auto;
 }
 .page-header__inner {
   position: relative;
@@ -227,7 +241,7 @@ input[type="radio"].visually-hidden {
   .user-exit {
     margin-top: 47px;
     margin-bottom: 50px;
-  }s
+  }
   .user__list {
     width: 191px;
     flex-wrap: wrap;
@@ -1168,7 +1182,9 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer {
+  flex: 0 0 auto;
   max-width: 1170px;
+  width: 100%;
   margin: 0 auto;
   border-top: 1px solid #f5e7f4;
 }
@@ -3288,6 +3304,7 @@ input::placeholder {
   max-width: 350px;
   width: 100%;
   margin: 0 auto;
+  
 }
 .login-form {
   display: -webkit-flex;
@@ -3301,6 +3318,7 @@ input::placeholder {
 .login-form__input {
   max-width: 320px;
   margin: 10px 0px;
+  padding: 0px 8px;
   font-size: 16px;
   line-height: 40px;
   width: 100%;
@@ -3346,6 +3364,7 @@ input:checked ~ .login-form__icon::after {
 .login__title {
   padding: 0px;
   margin: 0px;
+  margin-bottom: 20px;
   font-size: 19px;
   line-height: 30px;
   font-weight: 600;
@@ -3358,6 +3377,7 @@ input:checked ~ .login-form__icon::after {
   display: block;
   height: 45px;
   margin-top: 40px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 45px;
   font-weight: 600;
@@ -3371,6 +3391,149 @@ input:checked ~ .login-form__icon::after {
     padding: 0 48px;
   }
   .login-box {
+    max-width: 420px;
+  } 
+}
+
+.exit {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.exit__inner {
+  padding: 0 15px;
+}
+.exit-box {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  
+}
+.exit-form {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.exit-form__input {
+  max-width: 320px;
+  margin: 10px 0px;
+  padding: 0px 8px;
+  font-size: 16px;
+  line-height: 40px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #989898;
+}
+.exit-form__select {
+  max-width: 320px;
+  min-height: 42px;
+  margin: 10px 0px;
+  padding: 0px 18px;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+  color: #858585;
+}
+.exit-form__chechbox[type="checkbox"] {
+  display: none;
+}
+.exit-form__icon {
+  position: relative;
+}
+.exit-form__icon::before {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  left: 0px;
+  top: 10px;
+  background-color: #ff6c64;
+}
+.exit-form__icon::after {
+  display: none;
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 12px;
+  width: 31px;
+  height: 31px; 
+  background-image: url(../img/icon-tick.svg);
+  background-repeat: no-repeat;
+}
+input:checked ~ .exit-form__icon::after {
+  display: block;
+}
+.exit-form__text {
+  padding-left: 48px;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #858585
+}
+.exit__title {
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: 600;
+  color: #000;
+  text-align: center;
+}
+.exit-form__submit {
+  max-width: 320px;
+  width: 100%;
+  display: block;
+  height: 45px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 45px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background-color: #ff6c64;
+}
+.exit-form__link {
+  margin-left: 5px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ff6c64;
+  text-decoration: none;
+}
+.exit-form__ref {
+  position: relative;
+  padding-left: 60px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #858585;
+  text-decoration: none;
+}
+.exit-form__ref::before {
+  position: absolute;
+  content: "";
+  width: 52px;
+  height: 52px;
+  top: -14px;
+  left: 0px;
+  background-color: #fde1e0;
+  background-image: url(../img/user-naim.svg);
+  background-size: 23px 22px;
+  background-position: 15px 14px;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+}
+@media (min-width: 768px) {
+  .exit-form {
+    padding: 0 48px;
+  }
+  .exit-box {
     max-width: 420px;
   } 
 }

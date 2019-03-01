@@ -29,29 +29,52 @@
 		</div>
 	</header>
 	<main class="main">
-		<section class="login">
-			<div class="login__inner">
-				<h2 class="login__title">
-					Войти
+		<section class="exit">
+			<div class="exit__inner">
+				<h2 class="exit__title">
+					Последний шаг
 				</h2>
-				<div class="login-box">
-					<form action="" method="" class="login-form">
+				<div class="exit-box">
+					<form action="" method="" class="exit-form">
+						<p class="exit-form__foto">
+							<a href="" class="exit-form__ref">Добавьте фотографию</a>
+						</p>
 						<label>
-	            <input class="login-form__input" type="emai" name="email"  placeholder="E-mail">
+	            <input class="exit-form__input" type="data" name="year"  placeholder="Дата рождения">
 	          </label>
 	          <label>
-	          	<input class="login-form__input" type="password" name="password" placeholder="Пароль">
+	          	<select class="exit-form__select">
+	          		<option value="">Пол</option>
+	          	</select>
 	          </label>
-	           <div class="login-form__wrapper">
+	          <div class="exit-form__wrapper">
 	        		<label>
-	          		<input class="login-form__chechbox" type="checkbox" checked>
-	          		<span class="login-form__icon"></span>
+	          		<input class="exit-form__chechbox" type="checkbox" checked>
+	          		<span class="exit-form__icon"></span>
 	        		</label>
-	        		<p class="login-form__text">
-	        			Запомнить меня
+	        		<p class="exit-form__text">
+	        			Получать Email-уведомления
 	        		</p>
 	        	</div>
-							<a class="login-form__submit" href="#">Войти</a>
+	        	<div class="exit-form__wrapper">
+	        		<label>
+	          		<input class="exit-form__chechbox" type="checkbox" checked>
+	          		<span class="exit-form__icon"></span>
+	        		</label>
+	        		<p class="exit-form__text">
+	        			Клиент
+	        		</p>
+	        	</div>
+	        	<div class="exit-form__wrapper">
+	        		<label>
+	          		<input class="exit-form__chechbox" type="checkbox" checked>
+	          		<span class="exit-form__icon"></span>
+	        		</label>
+	        		<p class="exit-form__text">
+	        			Мастер
+	        		</p>
+	        	</div>
+						<a class="exit-form__submit  register" href="">Зарегистрироваться</a>
 					</form>
 				</div>
 			</div>
